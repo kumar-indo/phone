@@ -25,12 +25,14 @@
 
     to achieve the same in a single command
 
+5.  I've used `rubocop` to lint the code to and have a consistent coding style
+
 ## API
 
 While in development all api calls are made to `http://localhost:3000`
 
 1. Assign a random number
-     
+
    Make a `POST` request to `/sim_cards` with the following body
 
    ```
@@ -45,4 +47,5 @@ While in development all api calls are made to `http://localhost:3000`
    { "sim_card": { "number": 1234567890 }}
    ```
 
-   If the mobile number is available, it will be assigned.
+   If the mobile number is available, it will be assigned. Otherwise,
+   a random available number will be assigned
